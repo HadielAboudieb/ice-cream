@@ -1,0 +1,258 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    margin:auto;
+     padding: 0;
+    }
+#top{
+    color:rgb(78, 75, 75);
+    text-align-last:center;
+    font-size:30.5px;
+    font-weight:15px;
+    text-decoration:underline;
+    margin-top:25px;
+    margin-inline:0px;
+    margin-left:30.5%;
+}
+#top1{
+    color:black;
+    text-decoration:none;
+    text-align-last:end;
+    margin-top:7%;
+    font-size:20px ;
+    font-family: 'Ubuntu Mono', monospace; 
+    font-display:initial;
+    margin-left:35.9%;
+    
+}
+#hr{
+    display:flex;
+    width:100%;
+    background-color:darkorange; 
+   height:80px;
+    
+}
+
+#img{
+    display:inline-flex;
+    width:151px;
+    height:100px;
+    text-justify:none;
+    margin-top:10px ;
+    margin-left: 10px;
+}
+#navbar {
+    display:block;
+    flex-direction:initial;
+    background-color:darkorange; 
+    width:101.3%;
+    height:50px;
+    overflow:initial;    
+    font-family: 'Ubuntu Mono', monospace;
+    margin: -17.6px;;
+    margin-top:none;
+    margin-right: 99%;
+
+    border-radius:initial;
+}
+.nacontent{
+    display:flex;
+    justify-content: center;
+}
+ul  li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+ul  li   a{
+    padding: 3px;
+    color:chartreuse;
+    font-size:100%;
+    font-weight:50px;
+   
+ font-style:oblique;
+    text-decoration:none;
+    border-radius:15px;
+}
+ul  li  a:hover{
+    background-color:rgb(248, 241, 241);
+    border-radius: 20px;
+}
+#mainn {
+    display:block;
+	width: 100%;
+    block-size:100% ; 
+    justify-content:center;
+	height:100%;
+    margin-top:none;
+	overflow:hidden;
+	border-width:medium rgb(8, 8, 8);
+    background-color:dimgrey;
+}
+.maindiv{
+   display:block;
+ justify-content:center;
+}
+ p{
+    display:block;
+    color:rgb(8, 8, 8);
+    text-decoration:underline;
+    border-radius:40px;
+    font-size:20px ;
+    text-align-last:center;
+   margin-top:12px;
+   justify-content:center;
+   margin-right:50px;
+}
+.mainimg img{
+    display:block;
+    width:100%;
+    height:40%;
+    background-image:initial;
+
+    margin: none;
+    margin-top:-15.5px;
+}
+#text{
+   
+    display:contents;
+    color:aliceblue;
+    font-size:25px;
+    font-weight:10px;
+    text-align-last:left;
+    margin:none;
+   margin-right:70.5% ;
+    margin-top:15px;
+    justify-content:right;
+}
+#ice
+{
+    color:rgb(184, 231, 75);
+    text-align-last:center;
+    font-size:50px;
+    font-weight:15px;
+    text-decoration:underline;
+    margin-top:none;
+  
+  
+}
+.log{
+    display:grid;
+    justify-content:center; 
+    width:80px;  
+    color:rgb(237, 253, 95);
+    font-size:30px;
+    font-style:normal;
+    height:50px;
+    margin-top:10px;
+    margin:auto;
+    padding: 50px;
+    border:0 #ffffff;
+   
+}
+.log input{
+    font-size:20px;
+ height:50px;
+    color:black;
+    font-style:oblique;
+ border-bottom:aliceblue;
+ padding: 5px 10px;
+ background-image:radial-gradient(120deg, rgb(250, 233, 160) 30%,rgb(226, 170, 67)100%);
+ margin-top: auto;
+ 
+}
+.log button{
+   
+    width:350px;  
+    height:50px;
+    font-size:25px;
+    font-weight: 400;
+    font-style:italic;
+    color: rgb(158, 190, 38);
+    margin-left: 5px;
+    background-image: linear-gradient(120deg, rgb(250, 233, 160) 30%,rgb(226, 170, 67)100%);
+    margin-top:25px;
+   border: 0cm;
+   border-radius: 20px;
+
+}
+
+#logimg{
+    display:flex; 
+    height:40px;
+   
+    margin-top:0px;
+    margin-left: 10px;
+    margin:100px;
+    
+}
+.pord{
+    display:flex;
+    flex-direction:initial;
+    
+margin: 4%;
+margin-top:10px;
+padding:10px;
+    justify-content:space-between; 
+    margin-left:30%;
+    margin-right:auto;
+}
+.imgice{
+  display:block;   
+  color:#ccc;
+  margin:none;
+   width:40%;
+    height:30%;
+    margin-left: 20%;
+    margin-top: 30px;
+    max-width:10px ;
+}
+.imgice img{
+    display:block;
+   padding: 30%;
+    margin:50%;
+}
+
+#price{
+    display: flex;
+    padding: 1%;
+    margin-top: 10px;
+}
+footer {
+    display:flex;
+    text-align-last:center;  
+	width: 100%;
+	height: 50px;
+	background:rgb(255, 155, 33);
+	color: white;
+	font-size: 25px;
+    margin-top:none;
+	padding: none;
+}
+#tx{
+    margin-top: 10px;
+}
+#mig{
+    display:grid;
+    width: 300%;
+    height:60%;
+ margin-left:3.5%;
+  padding: 0px;
+
+}
+#s{
+    display:flex;
+    width:20px;
+    height:20px;
+    margin-top: 30px;
+   margin-left:30% ;
+    
+}
+#t{
+    font-size: 20px;
+    text-align:right;
+ margin-left: 25%;
+
+}
