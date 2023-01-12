@@ -1,3 +1,6 @@
+<?php
+session_start();  
+?>
 <!DOCTYPE htm1>
 <html lang="en-us">
   <head>
@@ -25,7 +28,7 @@
      <main class="mainn">
        <div class=".maindiv">
          <div class="log">
-           <form action="loginpost.php">
+           <form  name="log in" action="loginpost.php" method="post">
            <div>
              user name <input type="text"  name="username" size="30" placeholder=" enter user name " required="required">
            </div>
@@ -33,10 +36,10 @@
               password <input type="password"  name="password" size="30"   placeholder="enter password" required="required"> 
            </div> 
             <div>
-              <button type="submit" >Login</button> 
+              <button type="submit" >Login</a></button> 
             </div>
             <div>
-              <button type="submit" ><a href="signup.html">Signup </a></button> 
+              <button type="submit" ><a href="signup.php">Signup </a></button> 
             </div> </form>
           </div> 
        </div> 

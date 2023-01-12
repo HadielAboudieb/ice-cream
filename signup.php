@@ -1,7 +1,7 @@
 <!DOCTYPE htm1>
 <html lang="en-us">
   <head>
-    <title>sign up</title>
+    <title>signup</title>
   </head>
   <link rel="stylesheet"  href="Gelato.css">
   <body>
@@ -24,9 +24,8 @@
       </br> 
      <main class="mainn">
      
-       <form  name="signup" action = "signuppost.php"   method = "post">
+       <form name="sign up" action = "signuppost.php" method = "post">
          <div class="log">
-            
            <div>
               user name<input type="text"  name="username" size="30" placeholder="enter email" required="required"> 
             </div>
@@ -37,10 +36,10 @@
              password <input type="password"  name="password" size="30" placeholder="enter password" required="required"> 
            </div>
            <div>
-             confirm password <input type="password"  name="confirmpassword" size="30" placeholder="enter password" required="required">        
+             confirm password <input type="password"  name="confirmpassword" size="30" placeholder="enter password" required="required" same='password '>        
            </div>
            <div>
-             <button type="submit" name="Submit">signup </a></button>
+             <button type="submit" >signup </a></button>
 
            </div>
          </div>
