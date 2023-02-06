@@ -143,7 +143,7 @@ ul  li  a:hover{
     display:grid;
     justify-content:center; 
     width:80px;  
-    color:rgb(237, 253, 95);
+    color:rgb(243, 215, 92);
     font-size:30px;
     font-style:normal;
     height:50px;
@@ -158,7 +158,7 @@ ul  li  a:hover{
  height:50px;
     color:black;
     font-style:oblique;
- border-bottom:aliceblue;
+ border-bottom:rgb(230, 231, 148);
  padding: 5px 10px;
  background-image:radial-gradient(120deg, rgb(250, 233, 160) 30%,rgb(226, 170, 67)100%);
  margin-top: auto;
@@ -166,7 +166,7 @@ ul  li  a:hover{
 }
 .log button{
    
-    width:350px;  
+    width:250px;  
     height:50px;
     font-size:25px;
     font-weight: 400;
@@ -175,11 +175,16 @@ ul  li  a:hover{
     margin-left: 5px;
     background-image: linear-gradient(120deg, rgb(250, 233, 160) 30%,rgb(226, 170, 67)100%);
     margin-top:25px;
+    margin: 10%;
    border: 0cm;
    border-radius: 20px;
+   text-decoration:none;
 
 }
-
+.log button:hover{
+    cursor:pointer;
+    background-color:white ;
+}
 #logimg{
     display:flex; 
     height:40px;
@@ -382,10 +387,10 @@ footer {
  
 }
 .product-countenue{
-    position:relative;
+    position:absolute;
     background-color:white ;
     bottom: 35px;
-color :rgb(68, 63, 63);
+ color :rgb(68, 63, 63);
     cursor:pointer;
  padding:-40px;
  left:30px;
@@ -431,14 +436,33 @@ color :rgb(68, 63, 63);
     font-weight:300 ;
     border: 1px solid tomato;
 }
-.product-invoice{
+.product-confirmrequest{
+   
     position:relative;
+    bottom: 35px;
+    padding: 10px 25px;
+    background-color:greenyellow;
+    color: rgb(24, 168, 84);
+    left:70px;
+  width:150px;
+   
+    cursor:pointer;
+    border-radius:90px;
+}
+.product-confirmrequest:hover{
+    background-color:white ;
+    color: rgb(25, 223, 58);
+    font-weight:300 ;
+    border: 1px solid rgb(29, 206, 53);
+}
+.product-invoice{
+    position:absolute;
     
     bottom: 35px;
  color :rgb(22, 20, 20);
     
- left:95%;
-    border-radius:30px;
+ left:90%;
+    border-radius:50px;
 }
 .Delivery-optionse{
     position:absolute;
@@ -464,4 +488,27 @@ color :rgb(68, 63, 63);
 .fa{
     margin: 1px;
     margin-right: 2px;
+}
+.errore{
+    display: block;
+    background: white;
+    color:rgb(248, 78, 66);
+    padding: 10px;
+    width: 95%;
+    border-radius:5px ;
+    margin: 20px auto;
+}
+#name{
+   
+    color:black;
+    text-decoration:none;
+    text-align-last:auto;
+    margin-top:30px;
+    font-size:25.5px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-display:inherit;
+    margin-left:8px;
+    float:right;
+    font-weight:20px;
+    margin-right:-1100px;
 }

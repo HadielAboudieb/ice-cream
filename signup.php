@@ -5,7 +5,7 @@
   </head>
   <link rel="stylesheet"  href="Gelato.css">
   <body>
-    <form>
+    
       <header id="hr">
         <div>
           <p2 id="img"><img src="PngItem_727098.png"></p2>
@@ -16,9 +16,9 @@
        <div id="navbar">
           <ul class="nacontent">
             <li><a href="Home.php">Home</a></li>
-           <li><a href="About.html">About</a></li>
-           <li><a href="prices.html">prices</a></li>
-           <li><a href="contact.html">ContactUs</a></li>   
+           <li><a href="About.php">About</a></li>
+           <li><a href="prices.php">prices</a></li>
+           <li><a href="contact.php">ContactUs</a></li>   
           </ul>
         </div>
       </br> 
@@ -30,6 +30,12 @@
               user name<input type="text"  name="username" size="30" placeholder="enter email" required="required"> 
             </div>
             <div>
+            Address user <input type="text" name="address" size="30" placeholder="enter your address" required="required"> 
+           </div>
+           <div>
+             Phone <input type=""  name="phone_num" size="30" placeholder="enter your phone number" required="required"> 
+           </div>
+           <div>
              E-mail <input type="email"  name="Email" size="30" placeholder="enter E-mail" required="required"> 
            </div>
            <div>
@@ -46,11 +52,11 @@
         </form>
       </main>
       <footer>
-        <hh id="tx">
+        <hh >
           Copyright © 2022-2023 .
           Crème-glacée
          </hh>
      </footer>
-    </form>
+    
   </body>
 </html>
