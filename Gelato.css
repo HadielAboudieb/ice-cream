@@ -5,6 +5,7 @@
 body {
     margin:auto;
      padding: 0;
+     height:auto;
     }
 #top{
     color:rgb(78, 75, 75);
@@ -87,14 +88,16 @@ ul  li  a:hover{
     justify-content:center;
 	height:100%;
     margin-top:none;
-    margin: -1px;
+   margin:-1px ;
 	overflow:hidden;
-	border-width:medium rgb(8, 8, 8);
+	border-width:initial rgb(8, 8, 8);
     background-color:dimgrey;
+    
 }
 .maindiv{
    display:flex;
  justify-content:center;
+ height:100%;
 }
  p{
     display:block;
@@ -106,12 +109,13 @@ ul  li  a:hover{
    margin-top:12px;
    justify-content:center;
    margin-right:50px;
+
 }
 .mainimg img{
-    display:block;
+    display:flex;
     width:100%;
     height:40%;
-    background-image:initial;
+    background-image:inherit;
 
     margin: none;
     margin-top:-15.5px;
@@ -195,7 +199,7 @@ ul  li  a:hover{
     
 }
 .pord{
-    display:flex;
+    display:block;
     flex-direction:initial;
     
  margin: 4%;
@@ -208,22 +212,22 @@ ul  li  a:hover{
 .imgice{
   display:flex;   
   color:#ccc;
-  margin:30px;
-   width:30%;
+  
+
     height:40%; 
     background-color:white;
-    padding:10%;
-    position:relative;
-    margin-top: 5px;
-  margin-right: 10%;
+  
+   border-radius: 20px;
+    margin-top: 69px;
+
 }
 .imgice img{
     display:flex;
    padding: 30%; 
-   margin-left: 50px;
+   margin-left:200%;
  margin:10%;
  margin-top: 10px;
- position:relative; float: right;
+ position:absolute;
 }
 
 .price{
@@ -231,19 +235,19 @@ ul  li  a:hover{
     background-color: rgb(240, 182, 112);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding:5px;
-   margin: 5px;
-    position:relative;
+     margin: 5px;
+    position:static;
     font-size:20px;
     margin-top: 5px;
-    margin-right:50px;
+    margin-right:50%;
     border-radius: 20px; 
     width:150px;
- justify-items: end;
+
  }
 .ice-name,.price-ic{
     margin:5px;
     font-size:20px;
- 
+    margin-left: 15px;
  padding: 1px;
 }
 .price button {
@@ -254,7 +258,7 @@ ul  li  a:hover{
  
     color: rgb(233, 241, 233);  
     background-color:rgb(35, 172, 35) ;
-    margin-left: -3px;
+    margin-left: 15px;
    
     margin-top:10px;
    border: 0cm;
@@ -511,4 +515,49 @@ footer {
     float:right;
     font-weight:20px;
     margin-right:-1100px;
+}
+.pagc{
+    background-image: url(pexels-lukas-1352299.jpg);
+    background-attachment :initial;
+    background-size:cover ;
+    background-repeat: none;
+     
+    
+}
+.tabel  {
+    
+    display:contents;
+    font-size:30.5px;
+    font-weight:3px;
+    color:rgb(247, 155, 42);
+    margin-top: auto;
+    margin-left: 75%;;
+   color: coral;
+ margin: auto;
+ width:100%;
+ 
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+}
+.content ul  li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+.content ul  li   a{
+    padding: 3px;
+    color:coral;
+    font-size:100%;
+    font-weight:50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:oblique;
+    text-decoration:none;
+    border-radius:15px;
+}
+.content ul  li  a:hover{
+    background-color:rgb(248, 241, 241);
+    border-radius: 20px;
 }

@@ -1,6 +1,6 @@
  <?php
  session_start();
- if(isset($_SESSION['name_user']) && isset($_SESSION['pass_user'])){
+ if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
  ///$_SESSION['name_user']='sa';
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
      <header id="hr">
        <div>
          <p2 id="img"><img src="PngItem_727098.png"></p2>
-         <div id="name"><a > <?php echo $_SESSION['name_user']?></a></div>
+         <div id="name"><a href="updateprofil.php"  > <?php echo $_SESSION['nameuser']?></a></div>
         </div>
       <h1 id="top"> <em>Crème-glacée</em></h1><h2 id="top1"><i><a  href="shopping_cart.php" class="fa fa-shopping-cart" aria-hidden="true" aria-setsize="30px"></a></i> <a href="Login.php" class="fa fa-sign-in" aria-hidden="true" aria-setsize="50px"></a> <i ><a href="logout.php" class="fa fa-sign-out" aria-hidden="true"></a></i></h2> 
      </header>

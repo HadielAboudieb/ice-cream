@@ -13,7 +13,7 @@
      <header id="hr">
        <div>
          <p2 id="img"><img src="PngItem_727098.png"></p2>
-         <div id="name"><a href="profil.php" > <?php echo $_SESSION['name_user']?></a></div>
+         <div id="name"><a href="profil.php" > <?php echo $_SESSION['nameuser']?></a></div>
         </div>
         <h1 id="top"> <em>Crème-glacée</em> </h1><h2 id="top1"><a href="login.php" class="fa fa-sign-in" aria-hidden="true" aria-setsize="50px"></a> <i ><a href="logout.php" class="fa fa-sign-out" aria-hidden="true"></a></i></h2> 
      </header>

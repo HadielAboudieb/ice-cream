@@ -32,8 +32,8 @@ include 'gelato_ice.php';
          <?php
          if(count($_post)>1)
          {
-            mysqli_query($conn,"UPDATE user SET name_user='".$_POST['username']"', email_user='".$_POST['Email']"',pass_user='".$_POST['password']"',phone_user='".$_POST['phone_num']"',address_user='".$_POST['address']"'WHERET  name_user='".$_SESSION['name_user']"'")
-           echo  ""
+            mysqli_query($conn,"UPDATE user SET name_user='".$_POST['username']"', email_user='".$_POST['Email']"', pass_user='".$_POST['password']"',phone_user='".$_POST['phone_num']"', address_user='".$_POST['address']"' WHERE  name_user='".$_SESSION['nameuser']"'");
+           
         }?>
         </form>
       </main>

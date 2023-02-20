@@ -3,11 +3,13 @@
  
  include 'gelato_ice.php';
  $sql = "SELECT * FROM user ";
-
+ $usname=$_SESSION['nameuser'];
  $result = mysqli_query( $conn,$sql);
  if( mysqli_num_rows($result) === 1 ){
+  echo "$usname";
+  $result = mysqli_query( $conn,$sql);
  $row= mysqli_fetch_assoc($result);
- if($row['email_user'] === $usname){ 
+ if($row['name_user'] === "$usname"){ 
     $_SESSION['username']= $row['name_user'];
     $_SESSION['Email']= $row['email_user'];
    $_SESSION['password']= $row['pass_user'];

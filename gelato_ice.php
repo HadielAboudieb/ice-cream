@@ -5,6 +5,6 @@
      {
       echo "error:".mysqli_error();
      }else{
-        echo "welcome in database gelato_ice";
+       /* echo "welcome in database gelato_ice";*/
      }
 ?>

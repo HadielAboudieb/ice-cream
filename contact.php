@@ -14,7 +14,7 @@
      <header id="hr">
        <div>
          <p2 id="img"><img src="PngItem_727098.png"></p2>
-         <div id="name"><a href="profil.php" > <?php echo $_SESSION['name_user']?></a></div>
+         <div id="name"><a href="profil.php" > <?php echo $_SESSION['nameuser']?></a></div>
         </div>
         </div>
         <h1 id="top"> <em>Crème-glacée</em> </h1><h2 id="top1"><i><a  href="shopping_cart.php" class="fa fa-shopping-cart" aria-hidden="true" aria-setsize="30px"></a></i> <i><a href="Login.php" class="fa fa-sign-in" aria-hidden="true" aria-setsize="50px"></a> </i ><i ><a href="logout.php" class="fa fa-sign-out" aria-hidden="true"></a></i></h2>
@@ -33,7 +33,7 @@
        <form>
          <div class="maindiv">
             <div id="mig">
-              <img src="C:\Users\GISlaptop2\Downloads\cs315\cs315\map1.png"  >
+              <img src="pexels-lukas-1352271.jpg" width="100%" hight="5%">
              <div id ="s">
                <i class="fa fa-phone-square" aria-hidden="true"></i>
                <a id="t">
