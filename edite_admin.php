@@ -1,4 +1,4 @@
- <?php
+<?php
  session_start();
  if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
  ///$_SESSION['name_user']='sa';
@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Home</title>
+    <title>edite_ad</title>
   </head>
   <link rel="stylesheet"  href="Gelato.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -25,47 +25,32 @@
             <li><a href="Home.php"><em>Home</em></a></li>
            <li><a href="about.php"><em>About</em></a></li>
            <li><a href="prices.php"><em>Prices</em></a></li>
-           <li><a href="contact.php"><em>ContactUs</em></a></li>  
-           <?php if( $_SESSION['jopuser']==="admin")
-         {
-             ?> 
-           <li><a href="setvip.php"><em>set_vip</em></a></li>   
-           <?php 
-        } 
-        ?>
+           <li><a href="contact.php"><em>ContactUs</em></a></li>   
           </ul>
         </div>
       </br>
      <main class="mainn">
       <form>
-       <div class="maindiv">
-        
-          <p1 class="mainimg">
-             <div>
-               <img src="strawberry-ice-cream-wallpaper-2560x1080_14.jpg " >
-               <br>
-                  <h1 id="ice">
-                    <em>Ice-cream</em>
-                 </h1>
-                </br>
-               <div id="text"> 
-                 <em>
-                   Ice cream is very popular for all ages, especially in summer or high temperature seasons. The
-                   flavors vary ; some prefer flavors of strawberries and fruits
-                    , while some like eating ice cream flavored with vanilla and cocoa.
-                  </em>
-               </div >   
-             </div>
-           </p1>
-         </div>
-        </form>
-      </main>
-      <footer>
+       <div ><div id="et">
+       <label >
+        ``Edit_OF_Item``
+       </label>
+       
+ </div>
+ <div class="bt" >
+       <!--<a href="insert_item.php"><a href="updaet_item.php">-->
+        <button type="submit" size="20px" ><a href="insert_item.php" styl="text-decoration:none;">insert_item</a></button> <button type="submit" ><a href="edite_item.php">updaet_item</a></button>
+ </div>
+ </div>
+ </form>
+ </main>
+ <footer>
         <hh >
           Copyright © 2022-2023 .
           Crème-glacée
          </hh>
      </footer>
+     <button></button>
    
  </body>
 </html>     
@@ -76,4 +61,3 @@
     exit();
   }
 ?>
- 

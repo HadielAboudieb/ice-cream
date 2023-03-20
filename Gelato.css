@@ -5,7 +5,8 @@
 body {
     margin:auto;
      padding: 0;
-     height:auto;
+     height:100%;
+     width: 100%;
     }
 #top{
     color:rgb(78, 75, 75);
@@ -245,8 +246,8 @@ ul  li  a:hover{
 
  }
 .ice-name,.price-ic{
-    margin:5px;
-    font-size:20px;
+    margin:10px;
+    font-size:15px;
     margin-left: 15px;
  padding: 1px;
 }
@@ -272,15 +273,20 @@ ul  li  a:hover{
     border: 1px solid rgb(3, 173, 3);
 }
 footer {
-    display:flex;
-    text-align-last:center;  
-	width: 100%;
+    display:block;
+    text-align-last:inherit;  
+	width: 98.5%;
 	height: 50px;
 	background:rgb(255, 155, 33);
-	color: white;
-	font-size: 25px;
+
     margin-top:none;
-	padding: none;
+	padding: 10px;
+}
+footer hh{
+    color: white;
+    
+	font-size: 25px;
+    margin-left: 30%;
 }
 #tx{
     margin-top: 10px;
@@ -333,74 +339,29 @@ footer {
     font-size: 40px;
     margin-top: 10px;
 }
+.countenue{
+    margin: 10px;
+    display:flex;
+    margin-right:10%;
+    margin-left: -10%;
+}
 .cart{
     display:block;
-}
-.products{
-    box-sizing:1.75;
-}
-.product{
-    display:flex;
-    width:100%;
-    height: 200px;
-    overflow: hidden;
-    float:right;
-   margin-bottom: 20px;
-}
-.product:hover{
-
-    border: none;
-    box-shadow: 2px 2px 4px rgb(0, 0, 0.2);
    
 }
-.pi{
- margin-left:40%;
- float:left;
-  padding:15px;
-
-}
-
-
-.product  img{
-  
- padding: 9px;
- width: 10px;
-    border-radius: 5px;
-  margin: 70px;
-
-}
-.product-info{
- display:block;
-    padding: 5px;
-    width:24%;
-    height: auto;
-   margin: -10px;
- background-color: burlywood;
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-size:20px;
- text-overflow: initial;
- border: 10px;
- margin-left:0% ;
-
-    position:relative;
-}
-.product-name,.product-price{
-   margin: 10%;
- margin-bottom:10px;
- padding: 1px;
- 
+.cart img{
+    margin-right: 200%;
 }
 .product-countenue{
-    position:absolute;
-    background-color:white ;
-    bottom: 35px;
+    position:relative;
+   width:150px;
  color :rgb(68, 63, 63);
     cursor:pointer;
- padding:-40px;
- left:30px;
- top:-300px;
-
-    border-radius:30px;
+ padding:4px;background-color: aliceblue;
+right:300px;
+ margin:10px;
+top: -5px;margin-right: 10%;
+    border-radius:20px;
 }
 .product-countenue:hover{
     
@@ -408,38 +369,7 @@ footer {
     font-weight:300 ;
     border: 1px solid rgb(12, 15, 15);
 }
-.product-add{
-    position:absolute;
-    bottom: 35px;
-    padding: 10px 40px;
-    background-color: rgb(70, 194, 146);
-    color: white;
-    cursor:pointer;
- left:250px;
-    border-radius:30px;
-}
-.product-add:hover{
-    background-color:white ;
-    color: rgb(16, 173, 139);
-    font-weight:300 ;
-    border: 1px solid rgb(5, 156, 131);
-}
-.product-remove{
-    position:absolute;
-    bottom: 35px;
-    padding: 10px 25px;
-    background-color: tomato;
-    color: white;
-    left:60px;
-    cursor:pointer;
-    border-radius:90px;
-}
-.product-remove:hover{
-    background-color:white ;
-    color: tomato;
-    font-weight:300 ;
-    border: 1px solid tomato;
-}
+
 .product-confirmrequest{
    
     position:relative;
@@ -449,7 +379,7 @@ footer {
     color: rgb(24, 168, 84);
     left:70px;
   width:150px;
-   
+margin-left: 50%;   
     cursor:pointer;
     border-radius:90px;
 }
@@ -459,31 +389,7 @@ footer {
     font-weight:300 ;
     border: 1px solid rgb(29, 206, 53);
 }
-.product-invoice{
-    position:absolute;
-    
-    bottom: 35px;
- color :rgb(22, 20, 20);
-    
- left:90%;
-    border-radius:50px;
-}
-.Delivery-optionse{
-    position:absolute;
-    bottom: 35px;
-    padding: 10px 25px;
-    background-color: tomato;
-    color: white;
-    left:60px;
-    top:-90px;
-    cursor:pointer;
-    border-radius:90px;
-}
-.Delivery-optionse:hover{
-    color: rgb(25, 31, 29);
-    font-weight:300 ;
-    border: 1px solid rgb(12, 15, 15);
-}
+
 .product-quantity  input{
     width: 40px;
     padding: 5px;
@@ -493,15 +399,7 @@ footer {
     margin: 1px;
     margin-right: 2px;
 }
-.errore{
-    display: block;
-    background: white;
-    color:rgb(248, 78, 66);
-    padding: 10px;
-    width: 95%;
-    border-radius:5px ;
-    margin: 20px auto;
-}
+
 #name{
    
     color:black;
@@ -511,7 +409,7 @@ footer {
     font-size:25.5px ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-display:inherit;
-    margin-left:8px;
+    margin-left:40px;
     float:right;
     font-weight:20px;
     margin-right:-1100px;
@@ -527,15 +425,27 @@ footer {
 .tabel  {
     
     display:contents;
-    font-size:30.5px;
-    font-weight:3px;
-    color:rgb(247, 155, 42);
+    font-size:25px;
+    font-weight:100;
+    
     margin-top: auto;
-    margin-left: 75%;;
+    margin-left: 50%;
    color: coral;
- margin: auto;
- width:100%;
+ margin: 20px;
+
+ width:20px;
  
+}
+
+.thm{
+    margin-right:60%;
+    width: 40%;
+
+   
+}
+.thm tr{
+    display: flex;
+    margin: 30%;
 }
 
 .content{
@@ -560,4 +470,205 @@ footer {
 .content ul  li  a:hover{
     background-color:rgb(248, 241, 241);
     border-radius: 20px;
+}
+#et{
+  
+   margin-left:5.5%;
+
+
+    margin:5%;  
+}
+#et label{
+    color:#ffffff;
+    font-size:50px;
+    font-weight:100;
+    display:block;
+    height:30%;
+    
+      padding: 10px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bt{
+    margin-top:20%;
+ 
+    margin: 40px;
+}
+.bt button{
+    width:160px; 
+    display:block; 
+    height:40px;
+   
+    font-family:  'Times New Roman', serif;
+    font-size:25px;
+    font-weight: 500;
+    font-style:normal;
+    color:rgb(6, 81, 167);
+    text-decoration:none;
+ bottom:30px;
+ margin-left: 20%;
+ margin: 20%;  
+   border:60px;
+ background-color:cornflowerblue;
+   border-radius:20px;
+   text-decoration:none;
+
+}
+.bt button:hover{
+    cursor:pointer;
+    background-color:rgb(117, 214, 238) ;
+    color:rgb(6, 81, 167);
+}
+.insertt{
+   
+    color: rgb(243, 239, 239);
+    margin:10px;
+    padding: 20px;
+   
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-right: 20%;
+}
+.insertt label{
+  margin-left:45%;
+ 
+  padding: 30px;
+    margin:20%;
+}
+.insertt input{
+    bottom:50px;
+    margin:10px;
+    border-radius:10px;   
+    width:60%;
+    height:30%;
+    margin-left:30%;
+    border-bottom:rgb(230, 231, 148);
+    padding:20px ;
+}
+.insertt .in{
+    margin-left:35%;
+}
+.insertt .in button{
+   width:60%; 
+   height:70px;
+   font-family:'Times New Roman', serif;
+   font-size:25px;
+   font-weight: 500;
+   font-style:normal;
+   color:rgb(192, 81, 2);
+   text-decoration:none;
+   bottom:30px;
+   margin-left:40px;
+   margin: 50px;  
+   border:60px;
+   background-color:rgb(240, 133, 57);
+   border-radius:20px;
+}
+.insertt button:hover{
+    cursor:pointer;
+    background-color:rgb(226, 252, 166) ;
+    color:rgb(192, 81, 2);
+}
+.search{
+   height:100%;
+ display:block;
+ margin: 25%;
+margin-top: 5%;
+}
+.search  input{
+    
+    margin:50px;
+    border-radius:25px;   
+    width:100%;
+    height:10%;
+    background-color:aliceblue;
+    margin-top: 2%;
+    margin-left:5%;
+    border: 4px solid chocolate;
+    border-bottom:  1 solid chocolate;
+    padding:20px;
+}
+form div p {
+    text-decoration:underline;
+    color: rgb(248, 220, 64);
+ font-size: 30px;
+}
+form div p strong{
+    margin-right: 10%;
+}
+.search  button{
+    bottom:30px;
+
+    border-radius:20px;   
+    width:60%;
+    height:10%;
+    margin-left:30%;
+ color: #ffffff;
+    background-color:rgb(245, 160, 64);
+    border: 2px solid chocolate;
+    border-bottom:  1px solid chocolate;
+    padding:10px ;
+}
+.search button:hover{
+    cursor:pointer;
+    background-color:rgb(226, 252, 166) ;
+    color:rgb(192, 81, 2);
+}
+.choos div {
+   margin:10px;
+   
+    margin-top:25px;
+}
+.choos div p {
+   margin-left: 40px;
+    color: rgb(248, 220, 64);
+ font-size: 30px;
+}
+.choos div p strong{
+    margin-right: 15%;
+}
+.choos select{
+    margin:20px;
+    border-radius:5px;   
+    width:35%;
+    height:10%;
+    background-color:aliceblue;
+    margin-top: 10%;
+    margin-left:5%;
+    border: 2px solid chocolate;
+   color: rgb(185, 86, 14);
+    padding:5px;
+}
+.choos option{
+    color: rgb(245, 200, 51);
+
+}
+.tab{
+  margin: 40px;display:block;
+     padding:20px;
+}
+.tab table{
+    border: 2px solid  rgb(202, 99, 3) ;
+    background-color: rgb(248, 161, 61);
+    color: #ffffff;
+   margin: 25px;
+   margin-left: 30px;
+   width: 50px;
+   text-align: center;
+   left: 40px;
+}
+.tab table tr{
+    font-size:25px;
+    margin:50%;font-weight: 100;
+    padding: 30px;
+   text-rendering: optimizeLegibility;
+    width: 80%;height:50px;
+    margin-left: 30px;
+}
+.tab table .tap{
+    font-size:20px;
+    padding:90px;
+    margin: 40%;
+    width: 50px; text-align: center;
+    margin-left: 20px;
 }

@@ -1,7 +1,5 @@
 <?php
 session_start();
-if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
-///$_SESSION['name_user']='sa';
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -29,15 +27,16 @@ if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
           </div>
      </br>
      <main class="mainn">
-         <form>
-             <div class="maindiv">
-             <div class="pord">
+      
+             <div >
+             <div >
              <div>
               <table>
               <thead>
               <tr class="tabel">    
                 <th></th> 
                   <th><em>Name_item</em></th> 
+                  <th><em> ingredient</em></th>
                   <th ><em>praice</em></th>
                   <th ><em>available</em></th>
                   <th ><em>Quintity</em></th>
@@ -51,37 +50,36 @@ if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
                   $result = mysqli_query( $connection,$sql);
                  
                 while($row=$result->fetch_assoc())
-                { 
-                  ?><tr>
+                {  
+                  ?><form  action="addcart.php?numitem=<?php echo $row['num_item']; ?>"  method="post" >
+                 <div><tr style="margin:5%; padding:10%;">
+                  
                     <th> </th>
+                   
                      <th><em class="ice-name">
                       <?php echo $row['name_item'] ;?></em></th> 
-                     <th><em class="price-ic"><?php echo $row['ingredient_item'];?></em></th>
+                     <th><em class="price-ic"><?php echo "<br/  >``" .$row['ingredient_item'];?>``</em></th>
                      <th><em class="price-ic"><?php echo $row['price_item'];?></em></th>
                      <th><em class="price-ic"><?php echo $row['quant_item'];?></em></th>            
-                     <th><input type="number" value="1" name="quntity" min="1" max=<?php echo $row['price_item'] ?>></th>
-                     <th><button type="submit" class="fa fa-shopping-basket" aria-hidden="true" >buying</button></th>
-                   </tr>
+                     <th><?php if( $row['quant_item'] >0)
+                     { ?>  <input type="numder" name="Quintityitem" value="0"  size="2"><?php } ?></th>      
+                     <th ><button type="submit" class="fa fa-shopping-basket" aria-hidden="true" >buying</button></th>
+                
+                      </tr></div>
+                      </form>
                  <?php
                  
                 } $result->close();
                    $connection->close(); ?></thead></table>
            </div>
              </div>
-           </from>
+           
       </main>
-      
-    </body><footer>
+      <footer>
         <hh >
           Copyright © 2022-2023 .
           Crème-glacée
          </hh>
      </footer>
+    </body>
 </html>
-<?php
- }else
- {
-    header("location:login.php");
-    exit();
-  }
-?>

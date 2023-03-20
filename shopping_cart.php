@@ -1,7 +1,7 @@
 <?php
  session_start();
  if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
- // $_SESSION['name_user']='sa';
+$var_id= $_SESSION['iduser'];
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -31,50 +31,51 @@
          </div>
       </br>
      <main class="mainn">
-       <form >
-          <div class="maindiv">
-            <div class="sh">
-             <div class="container">
-                <div id="ci">
-                <img src="imgbin_shopping-bags-amp-trolleys-shopping-cart-logo-png.png" width="95px" height="90px"> 
-                <h3>Shopping Cart</h3>
-                </div>
+       <form action="deletecart.php" method="POST">
+          <div >
                 <div class="cart">
-                 <div class="products">
-                   <div classs="product"> 
-                     <div class="pi">
-                      <div>
-                          <img src="33664960 (1).jpg" width="25.5%" height="40%"  >
-                          <div class="product-info">
-                             <h4 class="product-name">Chocolate</h4>
-                             <h5 class="product-price">10 dly</h5>
-                             <p class="product-quantity">Qnt:<input value="1" name=""></p>
-                          </div>
-                         <div>
-                         <img src="images (3).jpg" width="25.5%" height="40%"  >
-                          <ht class="product-info">
-                             <h4 class="product-name">strawberry</h4>
-                             <h5 class="product-price">10 dly</h5>
-                             <p class="product-quantity">Qnt:<input value="1" name=""></p>
-                        </ht>
-                        </div>
-                      </div> 
-                         <div >
-                      </div> 
-                     </div>
-                     <div>
-                       <h class="product-countenue">
+                  <img src="imgbin_shopping-bags-amp-trolleys-shopping-cart-logo-png.png" width="95px" height="90px"> 
+                 <h3>Shopping Cart</h3>
+               </div>
+              
+                <div class="countenue">
+                       <div class="product-countenue">
                         <i  class="fa fa-angle-double-left" aria-hidden="true"></i> 
-                        <span ><a href="prices.html"><i href="#">countenue shop</i> </a></span></div>
-                      </h>
-                        <h class="product-add">
-                          <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                          <span >add</span>
-                        </h>
-                        <div class="product-remove">
-                         <i class="fa fa-trash-o" aria-hidden="true"></i>
-                         <span >Remove</span>
+                        <a href="prices.php"><i href="#">countenue shop</i> </a></div>
+ </div>
+                 
+                   <div> 
+                   <?php  
+                  include 'gelato_ice.php';
+                  $connection = new mysqli('localhost', 'root','', 'gelato_ice');
+                 //  mysqli_begin_transaction();
+                  $sql = "SELECT * FROM shoppingcart WHERE user_id=$var_id  "; 
+                 $result = mysqli_query( $connection,$sql);
+                $rows = $result->num_rows;
+                   for ($j = 0 ; $j < $rows ; ++$j)
+                   {  $row = $result->fetch_array(MYSQLI_ASSOC);
+                      ?>
+                     <div>
+                     Name item:<em class="icee-name">
+                      <?php echo $row['name_item'] ;?></em></div> 
+                     <div>Quintity:<em class="pricee-ic"><?php echo $row['quant_item'];?></em></div>
+                     
+                     <div>Numder categ:<em class="pricee-ic"><?php echo $row['num_categ'];?></em><div>price:<em class="pricee-ic">
+                          <?php echo $row['price_item'];                
+                         ?>
+                        </em></div>
+                     <div >
+                         <button type="submit"><i class="fa fa-trash-o" aria-hidden="true"><a href="deletecart.php?numcart=<?php echo $row['num_cart']; ?>"> Remove</a></i></button>
+                       </div>                     
+                     
                        </div>
+                     <?php
+                    }
+                  
+                
+                     $result->close();
+                     $connection->close(); 
+                 ?>   
                        <div class="product-confirmrequest">
                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                          <span ><a href="order.html"> confirm request</a></span>
@@ -88,13 +89,9 @@
                         
                           
                             
-                        </div></div>
-               </div>
-             </div> 
+                        
              
-           </div>
-          </div>
-       
+           
          </div>
        </form> 
        

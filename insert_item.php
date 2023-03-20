@@ -1,12 +1,10 @@
- <?php
+<?php
  session_start();
- if(isset($_SESSION['nameuser']) && isset($_SESSION['passuser'])){
- ///$_SESSION['name_user']='sa';
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Home</title>
+    <title>insert_item</title>
   </head>
   <link rel="stylesheet"  href="Gelato.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -25,38 +23,32 @@
             <li><a href="Home.php"><em>Home</em></a></li>
            <li><a href="about.php"><em>About</em></a></li>
            <li><a href="prices.php"><em>Prices</em></a></li>
-           <li><a href="contact.php"><em>ContactUs</em></a></li>  
-           <?php if( $_SESSION['jopuser']==="admin")
-         {
-             ?> 
-           <li><a href="setvip.php"><em>set_vip</em></a></li>   
-           <?php 
-        } 
-        ?>
+           <li><a href="contact.php"><em>ContactUs</em></a></li>   
           </ul>
         </div>
       </br>
      <main class="mainn">
-      <form>
-       <div class="maindiv">
-        
-          <p1 class="mainimg">
-             <div>
-               <img src="strawberry-ice-cream-wallpaper-2560x1080_14.jpg " >
-               <br>
-                  <h1 id="ice">
-                    <em>Ice-cream</em>
-                 </h1>
-                </br>
-               <div id="text"> 
-                 <em>
-                   Ice cream is very popular for all ages, especially in summer or high temperature seasons. The
-                   flavors vary ; some prefer flavors of strawberries and fruits
-                    , while some like eating ice cream flavored with vanilla and cocoa.
-                  </em>
-               </div >   
-             </div>
-           </p1>
+      <form  action = "insert.php" method = "post">
+      <div class="maindiv">
+         <div class="insertt">
+           <div>
+           <label> Name item</label><input type="text"  name="itemname" size="50" placeholder="enter item name" required="required"> 
+            </div>
+            <div>
+            <label>Quintity </label><input type="numder" name="Quintityitem" size="30" placeholder="enter your Quintity" required="required"> 
+           </div>
+           <div>
+           <label>Ingredient </label><input type="text"  name="Ingredient" size="100" placeholder="enter your Ingredient" required="required"> 
+           </div>
+           <div>
+           <label>Numder categ</label><input type="number"  name="Numdercateg" size="5" placeholder="enter Numder categ" required="required"> 
+           </div>
+           <div>
+           <label>price</label> <input type="text"  name="priceitem" size="4" placeholder="enter price" required="required"> 
+           </div>
+           <div class="in">
+             <button type="submit" >insert </a></button>
+           </div></div>
          </div>
         </form>
       </main>
@@ -66,14 +58,6 @@
           Crème-glacée
          </hh>
      </footer>
-   
- </body>
-</html>     
-<?php
- }else
- {
-    header("location:login.php");
-    exit();
-  }
-?>
- 
+    
+  </body>
+</html>
